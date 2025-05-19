@@ -1,0 +1,35 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: BarBear
+authors:
+  - family-names: Fernandes Camargos de Lima
+    given-names: Igor
+  - family-names: dos Reis Soares
+    given-names: Thaís 
+  - family-names: Gonçalves Nunes Carvalho
+    given-names: Bárbara Kawany 
+  - family-names: Martins Gonçalves
+    given-names: Túlio Henrique 
+  - family-names: Guanães Albuquerque Martins
+    given-names: Alice 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Alonso Veloso
+    given-names: Eveline 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Baroni de Carvalho
+    given-names: Juliana Amaral 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Ribeiro de Souza
+    given-names: Joana Gabriela
+keywords:
+  - Barbearia
+  - Estabelecimento de beleza
+  - Agendamento de serviços
+  - Autoestima 
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-2-ti2-1372100-barbear
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-12-12
