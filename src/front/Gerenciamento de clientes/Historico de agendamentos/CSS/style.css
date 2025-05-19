@@ -1,0 +1,249 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.cont {
+  padding: 70px 14% 60px;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main * {
+  box-sizing: border-box;
+}
+.hud {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+h1 {
+  color: #ff9f0d;
+}
+
+#tituloServicos {
+  margin-top: 20px;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+#botaoCadastrar {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ff9f0d;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  color: #1d1d1d;
+  transition: 0.5s;
+  outline: none;
+  border: #ff9f0d 2px solid;
+  cursor: pointer;
+}
+
+#botaoCadastrar:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #1d1d1d;
+}
+
+.botao {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ff9f0d;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-size: 0.7rem;
+  color: #1d1d1d;
+  transition: 0.5s;
+  outline: none;
+  border: #ff9f0d 2px solid;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.botao:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #1d1d1d;
+}
+
+#botaoVoltar {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ff9f0d;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  color: #1d1d1d;
+  transition: 0.5s;
+  outline: none;
+  border: #ff9f0d 2px solid;
+}
+
+#botaoVoltar:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #1d1d1d;
+}
+.logo-cart {
+  margin-bottom: 10px;
+}
+.product-card .logo-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card .logo-cart img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+.product-card .logo-cart i {
+  font-size: 27px;
+  color: #ff9f0d;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.product-card .logo-cart i:hover {
+  color: #fff;
+}
+
+.product-card {
+  position: relative;
+  max-width: 355px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 20px 30px 30px 30px;
+  background: #1d1d1d;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  overflow: hidden;
+}
+.cabelo {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.corte_name {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.detalhes-corte p {
+  margin-bottom: 10px;
+}
+
+.product-card .main-images img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.product-card .detalhes-corte .corte_name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.product-card .detalhes-corte p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.product-card .detalhes-corte .stars i {
+  margin: 0 -1px;
+  color: #ff9f0d;
+}
+
+.product-card .color-price .color-option {
+  display: flex;
+  align-items: center;
+}
+.color-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.color-price .color-option .color {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+.color-option .circles {
+  display: flex;
+}
+.color-option .circles .circle {
+  height: 18px;
+  width: 18px;
+  background: #0071c7;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.color-price .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.color-price .price .price_num {
+  font-size: 25px;
+  font-weight: 600;
+  color: #707070;
+}
+.color-price .price .price_letter {
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: -4px;
+  color: #707070;
+}
+
+.butao {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+  font-weight: 900;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #ff9f0d;
+  outline: none;
+  border: #ff9f0d 2px solid;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.butao:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #1d1d1d;
+}
+
+@media (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+  }
+}
+
+@import "../CSS/popup.css";

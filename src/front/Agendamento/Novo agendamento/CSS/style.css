@@ -1,0 +1,121 @@
+.gridContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 20px;
+  gap: 100px;
+  justify-items: center;
+}
+
+.cont {
+  padding: 150px 14% 60px;
+}
+
+.gridContainer img {
+  align-items: right;
+  height: 400px;
+}
+
+.gridContainer p {
+  font-size: 1.6rem;
+  line-height: 64px;
+  color: #ff9f0d;
+  font-weight: 800;
+}
+
+.form {
+  padding: 40px 20px;
+  background-color: rgba(28, 28, 28, 0.4);
+  border-radius: 40px;
+  width: 92.9%;
+}
+
+.subAgendamento {
+  justify-self: center;
+  text-transform: uppercase;
+  color: #ff9f0d;
+  font-weight: 900;
+  font-size: 2.7rem;
+}
+.formularioAgendamento {
+  display: flex;
+  flex-direction: column;
+}
+
+.formularioAgendamento label {
+  color: #5b5b5b;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.formularioAgendamento input:focus {
+  border: #ff9f0d 2px solid;
+  outline: none;
+}
+.formularioAgendamento input {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  border: #1d1d1d 2px solid;
+  margin-bottom: 1rem;
+  background-color: #1d1d1d;
+  transition: 0.5s;
+  color: white;
+}
+
+#data,
+#horario {
+  color: white;
+}
+
+.botaoLogin {
+  text-transform: uppercase;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ff9f0d;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #1d1d1d;
+  transition: 0.5s;
+  outline: none;
+  border: #ff9f0d 2px solid;
+}
+
+.botaoLogin:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #1d1d1d;
+}
+
+.selectForm {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #5b5b5b;
+  padding: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  border-radius: 10px;
+  border: #1d1d1d 2px solid;
+  margin-bottom: 1rem;
+  background-color: #1d1d1d;
+  transition: 0.5s;
+}
+.selectForm:focus {
+  border-color: #ff9f0d;
+  outline: none;
+  color: #ff9f0d;
+}
+
+@media (max-width: 1000px) {
+  .gridContainer {
+    place-self: center;
+    grid-template-columns: 1fr;
+  }
+  #barber {
+    display: none;
+  }
+}

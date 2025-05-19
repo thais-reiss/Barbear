@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="icon"
+      href="../../../../docs/images/logoBarBear2.png"
+      type="image/png"
+    />
+    <!-- Boxicons CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/header.css"
+    />
+    <title>Minha Conta - BarBear</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="../../../../docs/images/logoBarBear2.png"
+          alt="Logo BarBear"
+        />
+      </a>
+
+      <ul id="navlist" class="navlist">
+        <!--<li>
+          <a href="../../HomePage/index.html" class="active">Página inicial</a>
+        </li>
+        <li><a href="../../HomePage/index.html#about">Sobre nós</a></li>
+        <li><a href="../../Exibir barbearias/exibir.html">Barbearias</a></li>
+        <li><a href="../../HomePage/index.html#review">Avaliações</a></li>-->
+        <li><a href="../../Gerenciamento de servicos/Meus servicos/meus-servicos.html">Serviços</a></li>
+        <li><a href="../Meus agendamentos/agendamentos.html">Agendamentos</a></li>
+        <li><a href="minhaConta.html">Minha Conta</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a
+          href="../../Gerenciamento de clientes/Login cliente/loginCliente.html"
+          ><i class="bx bx-user"></i
+        ></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="cont">
+      <div class="containerSlogan">
+        <main class="login">
+          <div>
+            <p>Aqui você pode consultar os seus</p>
+            <p>dados cadastrados</p>
+          </div>
+          <img
+            src="../../../../docs/images/undraw_barber_-3-uel.svg"
+            alt="Barber"
+            id="barber"
+          />
+        </main>
+        <div class="form">
+          <h1 class="subLogin">Minha Conta</h1>
+
+          <form class="formulario">
+            <div>
+              <label for="botaoA">Alterar conta</label>
+              <button id="botaoA" class="botaoLogin" type="button">
+                Alterar dados cadastrados
+              </button>
+            </div>
+
+            <div>
+              <label for="botaoB">Verificar serviços</label>
+              <button id="botaoB" class="botaoLogin" type="button">
+                Deseja ver seus serviços?
+              </button>
+            </div>
+
+            <div>
+              <label for="botaoC">Excluir conta</label>
+              <button id="botaoC" class="botaoLogin" type="button">
+                Deseja fazer a exclusão da conta?
+              </button>
+            </div>
+
+            <div>
+              <label for="botaoD">Indicadores de desempenho</label>
+              <button id="botaoD" class="botaoLogin" type="button">
+                Verificar desempenho da barbearia
+              </button>
+            </div>
+
+            <div>
+              <label for="botaoE">Suas avaliações</label>
+              <button id="botaoE" class="botaoLogin" type="button">
+                Verificar o agrado dos clientes
+              </button>
+            </div>
+
+            <div>
+              <label for="botaoF">Seus agendamentos</label>
+              <button id="botaoF" class="botaoLogin" type="button">
+                Confirmar seus agendamentos
+              </button>
+            </div>
+
+            <div>
+              <label for="botaoG">Sair da conta</label>
+              <button id="botaoG" class="botaoLogin" type="button">
+                Sair da conta
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="exibirInfo">
+          <div class="form">
+            <h1 class="subLogin">Suas informações</h1>
+            <!--Fazer integracao onde exibe as informacoes-->
+            <form id="exibirInfo" class="formulario" action="#">
+              <div class="flex">
+                <label for="EmailBarbearia">Email</label>
+                <input
+                  type="email"
+                  id="EmailBarbearia"
+                  placeholder="Email"
+                  disabled
+                />
+              </div>
+
+              <div class="flex">
+                <label for="NomeBarbearia">Nome da barbearia</label>
+                <input
+                  type="text"
+                  id="NomeBarbearia"
+                  placeholder="Nome da Barbearia"
+                  disabled
+                />
+              </div>
+
+              <div class="flex">
+                <label for="CNPJ">CNPJ</label>
+                <input type="text" id="CNPJ" placeholder="CNPJ" disabled />
+              </div>
+
+              <div class="flex">
+                <label for="Telefone">Telefone</label>
+                <input
+                  type="number"
+                  id="Telefone"
+                  placeholder="Telefone"
+                  disabled
+                />
+              </div>
+
+              <div class="flex">
+                <label for="CEP" class="hidden">CEP</label>
+                <input
+                  type="text"
+                  id="CEP"
+                  placeholder="CEP"
+                  class="hidden"
+                  disabled
+                />
+              </div>
+
+              <div class="flex">
+                <label for="Rua" class="hidden">Rua</label>
+                <input
+                  type="text"
+                  id="Rua"
+                  placeholder="Rua"
+                  class="hidden"
+                  disabled
+                />
+              </div>
+
+              <div class="flex">
+                <label for="Bairro" class="hidden">Bairro</label>
+                <input
+                  type="text"
+                  id="Bairro"
+                  placeholder="Bairro"
+                  class="hidden"
+                  disabled
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../HomePage/JS/header.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../../../../docs/images/logoBarBear2.png"
+      type="image/png"
+    />
+    <title>BarBear</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="../../../../docs/images/logoBarBear2.png"
+          alt="Logo BarBear"
+        />
+      </a>
+
+      <ul id="navlist" class="navlist">
+        <li><a href="#" class="active">Página inicial</a></li>
+        <li><a href="#about">Sobre nós</a></li>
+        <!--<li><a href="#shop">Barbearias</a></li>-->
+        <li><a href="#">Histórico</a></li>
+        <li><a href="#review">Avaliações</a></li>
+      </ul>
+
+      <!--<div class="nav-icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a href="../Gerenciamento de clientes/Login cliente/loginCliente.html"
+          ><i class="bx bx-user"></i
+        ></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>-->
+      
+    </header>
+    <main class="home">
+      <div class="home-text">
+        <h1 id="tituloMain">
+          Conheça, <span>Experimente &</span> Aproveite a Verdadeira Excelência
+        </h1>
+       
+        <a style="margin-bottom: 20px;" href="../Gerenciamento de clientes/Login cliente/loginCliente.html" class="btn"
+          >É cliente? Faça seu login! <i class="bx bxs-right-arrow"></i
+        ></a>
+
+        <a style="margin-bottom: 20px;" href="../Gerenciamento de clientes/Cadastro cliente/cadastro.html" class="btn2"
+          >Ou realize seu cadastro!</a
+        >
+
+        <a style="margin-bottom: 20px;" href="../Gerenciamento de Barbearias/Pagina de Login/login.html" class="btn"
+          >É barbearia? Faça seu login <i class="bx bxs-right-arrow"></i
+        ></a>
+
+        <a href="../Gerenciamento de Barbearias/Inserir dados/inserir.html" class="btn2"
+          >Ou realize seu cadastro!</a
+        >
+      </div>
+      <div class="home-img">
+        <img
+          src="../assets/imgs/mmaquinas de barbearia.png"
+          alt="Maquinas de barbear"
+          class="imgDesfocada"
+        />
+      </div>
+    </main>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="../assets/imgs/barbearia.jpg" alt="Barbearia" />
+      </div>
+
+      <div class="about-text">
+        <h2>Vivendo bem <br />cuidando da aparência.</h2>
+        <p>
+          Optamos pela criação do BarBear com o objetivo de atender homens que
+          enfrentam dificuldades na escolha do barbeiro ideal ou na seleção de
+          um serviço de qualidade. <br />
+          <br />Nosso foco é proporcionar segurança e confiança aos clientes,
+          garantindo que não corram o risco de comprometer sua autoestima e
+          economizem tempo no processo, não precisando passar pelas filas e
+          preparo do barbeiro, que já estará esperando o cliente.
+        </p>
+        <!--<a href="../Exibir barbearias/exibir.html" class="btn"
+          >Conhecer mais<i class="bx bxs-right-arrow"></i
+        ></a>-->
+      </div>
+    </section>
+
+    <!--<section class="shop" id="shop">
+      <div class="middle-text">
+        <h4>Barbear</h4>
+        <h2>Barbearias populares</h2>
+      </div>
+
+      <div class="shop-content">
+        <div class="row">
+          <img src="../assets/imgs/user.png" alt="" />
+          <h3>Barbearia Lacourte</h3>
+          <p>Serviço unico na cidade!</p>
+          <div class="in-text">
+            <div class="s-btnn">
+              <a href="../Exibir servicos/servicos.html">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="../assets/imgs/user.png" alt="" />
+          <h3>Barbearia Sr. Bigode</h3>
+          <div class="in-text">
+            <div class="s-btnn">
+              <a href="../Exibir servicos/servicos.html">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="../assets/imgs/user.png" alt="" />
+          <h3>Barbearia Barbosa</h3>
+          <div class="in-text">
+            <div class="s-btnn">
+              <a href="../Exibir servicos/servicos.html">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="../assets/imgs/user.png" alt="" />
+          <h3>Antonio's Barbearia</h3>
+          <div class="in-text">
+            <div class="s-btnn">
+              <a href="../Exibir servicos/servicos.html">Ver mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-btn">
+        <a href="../Exibir barbearias/exibir.html" class="btn"
+          >Todas as barbearias<i class="bx bxs-right-arrow"></i
+        ></a>
+      </div>
+    </section>-->
+
+    <section id="review" class="review">
+      <div class="middle-text">
+        <h4>Nossos usuários</h4>
+        <h2>O que nossos clientes dizem sobre nós</h2>
+      </div>
+
+      <div class="review-content">
+        <div class="box">
+          <p>Serviço incrivel!</p>
+
+          <div class="in-box">
+            <div class="bx-img">
+              <img id="userImg" src="../assets/imgs/user.png" alt="" />
+            </div>
+            <div class="bxx-text">
+              <h4>Paulo Lima</h4>
+              <h5>Cliente</h5>
+              <div class="ratings">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p>Muito bom!</p>
+
+          <div class="in-box">
+            <div class="bx-img">
+              <img id="userImg" src="../assets/imgs/user.png" alt="" />
+            </div>
+            <div class="bxx-text">
+              <h4>Arthur Orlando</h4>
+              <h5>Cliente</h5>
+              <div class="ratings">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p>Ótimo para conectar barbearias e clientes!</p>
+
+          <div class="in-box">
+            <div class="bx-img">
+              <img id="userImg" src="../assets/imgs/user.png" alt="" />
+            </div>
+            <div class="bxx-text">
+              <h4>Rodrigo Silva</h4>
+              <h5>Cliente</h5>
+              <div class="ratings">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

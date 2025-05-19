@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - BarBear</title>
+    <link
+      rel="icon"
+      href="../../../../docs/images/logoBarBear2.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/header.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="../../../../docs/images/logoBarBear2.png"
+          alt="Logo BarBear"
+        />
+      </a>
+
+      <ul id="navlist" class="navlist">
+        <li>
+          <a href="../../HomePage/index.html" class="active">Página inicial</a>
+        </li>
+        <li><a href="../../HomePage/index.html#about">Sobre nós</a></li>
+        <!--<li><a href="../../Exibir barbearias/exibir.html">Barbearias</a></li>-->
+        <li><a href="../../HomePage/index.html#review">Avaliações</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a
+          href="../../Gerenciamento de clientes/Login cliente/loginCliente.html"
+          ><i class="bx bx-user"></i
+        ></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="cont">
+      <div class="mainContainer">
+        <main class="login">
+          <div>
+            <p>Bem-vindo à familia do urso</p>
+            <p>Nós somos a Barbear</p>
+          </div>
+          <img
+            src="../../../../docs/images/undraw_barber_-3-uel.svg"
+            alt="Barber"
+            id="barber"
+          />
+        </main>
+        <div class="form">
+          <h1 class="subLogin">Registre-se</h1>
+          <form class="formulario" action="#">
+            <!-- Etapa 1: Campos principais -->
+            <label for="EmailBarbearia">Email</label>
+            <input type="email" id="EmailBarbearia" placeholder="Email" />
+
+            <label for="SenhaBarbearia">Senha</label>
+            <input type="password" id="SenhaBarbearia" placeholder="Senha" />
+
+            <label for="NomeBarbearia">Nome da barbearia</label>
+            <input
+              type="text"
+              id="NomeBarbearia"
+              placeholder="Nome da Barbearia"
+            />
+
+            <label for="CNPJ">CNPJ</label>
+            <input type="text" id="CNPJ" placeholder="CNPJ" />
+
+            <label for="Telefone">Telefone</label>
+            <input type="text" id="Telefone" placeholder="Telefone" />
+
+            <div>
+              <label for="horario">Horário</label>
+              <label for="horario8">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario8"
+                  value="08:00"
+                />
+                08:00
+              </label>
+              <label for="horario9">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario9"
+                  value="09:00"
+                />
+                09:00
+              </label>
+              <label for="horario10">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario10"
+                  value="10:00"
+                />
+                10:00
+              </label>
+              <label for="horario11">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario11"
+                  value="11:00"
+                />
+                11:00
+              </label>
+              <label for="horario12">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario12"
+                  value="12:00"
+                />
+                12:00
+              </label>
+              <label for="horario13">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario13"
+                  value="13:00"
+                />
+                13:00
+              </label>
+              <label for="horario14">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario14"
+                  value="14:00"
+                />
+                14:00
+              </label>
+              <label for="horario15">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario15"
+                  value="15:00"
+                />
+                15:00
+              </label>
+              <label for="horario16">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario16"
+                  value="16:00"
+                />
+                16:00
+              </label>
+              <label for="horario17">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario17"
+                  value="17:00"
+                />
+                17:00
+              </label>
+              <label for="horario18">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario18"
+                  value="18:00"
+                />
+                18:00
+              </label>
+              <label for="horario19">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario19"
+                  value="19:00"
+                />
+                19:00
+              </label>
+              <label for="horario20">
+                <input
+                  type="checkbox"
+                  name="horario"
+                  id="horario20"
+                  value="20:00"
+                />
+                20:00
+              </label>
+            </div>
+
+            <!-- Etapa 2: Campos de endereço (começam ocultos) -->
+            <label for="CEP" class="hidden">CEP</label>
+            <input type="text" id="CEP" placeholder="CEP" class="hidden" />
+
+            <label for="Rua" class="hidden">Rua</label>
+            <input type="text" id="Rua" placeholder="Rua" class="hidden" />
+
+            <label for="Bairro" class="hidden">Bairro</label>
+            <input
+              type="text"
+              id="Bairro"
+              placeholder="Bairro"
+              class="hidden"
+            />
+
+            <button class="botaoLogin" type="button" id="nextButton">
+              CONTINUAR</button
+            ><!--a-->
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../../HomePage/JS/header.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

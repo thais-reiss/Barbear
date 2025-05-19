@@ -1,0 +1,29 @@
+.cont {
+  padding: 150px 14% 60px;
+}
+
+.indicadores {
+  padding: 40px 20px;
+  background-color: rgba(28, 28, 28, 0.4);
+  border-radius: 40px;
+  margin-bottom: 40px;
+}
+
+.indicadores h1 {
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+#textoAvaliacoes,
+#textoAgendamentos,
+#textoPopularidadeServicos {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#textoAvaliacoes,
+#textoAgendamentos,
+#textoPopularidadeServicos span {
+  color: #ff9f0d;
+}

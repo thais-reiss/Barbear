@@ -1,0 +1,87 @@
+#popup {
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  margin: auto auto;
+
+  display: none;
+  background-color: #1e1e1e;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+
+  animation: slide 0.5s forwards;
+  border: solid #ff9f0d 8px;
+  border-radius: 40px;
+  z-index: 9999;
+}
+
+#descricaoAvaliacao {
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  border: #1d1d1d 2px solid;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+#descricaoAvaliacao:focus {
+  border: #ff9f0d 2px solid;
+  outline: none;
+}
+
+.selectForm {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  border-radius: 10px;
+  border: #1d1d1d 2px solid;
+  margin-bottom: 1rem;
+  background-color: #1d1d1d;
+  transition: 0.5s;
+}
+.selectForm:focus {
+  border-color: #ff9f0d;
+  outline: none;
+  color: #ff9f0d;
+}
+
+#popup label {
+  color: #ff9f0d;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+#popup button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+  font-weight: 900;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #ff9f0d;
+  outline: none;
+  border: #ff9f0d 2px solid;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#popup button:hover {
+  background-color: #1d1d1d;
+  color: #fff;
+  border: #fff 2px solid;
+}
+
+@keyframes slide {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}

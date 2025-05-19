@@ -1,0 +1,32 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-img {
+  height: auto;
+  width: 80%;
+}
+
+.about-img {
+  place-self: center;
+}
+
+.about-img img {
+  border-radius: 4px;
+}
+
+.about-text h2 {
+  font-size: var(--h2-font);
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  font-size: var(--p-font);
+  color: var(--second-color);
+  line-height: 30px;
+  margin-bottom: 3rem;
+}

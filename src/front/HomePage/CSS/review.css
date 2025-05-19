@@ -1,0 +1,50 @@
+#userImg {
+  height: 70px;
+  border-radius: 3rem;
+}
+
+.review-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 2rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.box {
+  padding: 35px;
+  border-radius: 3rem;
+  background: var(--other-color);
+}
+
+.box p {
+  color: var(--second-color);
+  font-size: var(--p-size);
+  line-height: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.in-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.bxx-text h4 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.bxx-text h5 {
+  color: var(--second-color);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.ratings i {
+  color: var(--main-color);
+  font-size: 18px;
+  margin-right: 5px;
+}

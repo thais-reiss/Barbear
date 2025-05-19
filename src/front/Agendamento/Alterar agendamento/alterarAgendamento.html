@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento - BarBear</title>
+    <link
+      rel="icon"
+      href="../../../../docs/images/logoBarBear2.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/header.css"
+    />
+    <link rel="stylesheet" href="./CSS/popup.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="../../../../docs/images/logoBarBear2.png"
+          alt="Logo BarBear"
+        />
+      </a>
+
+      <ul id="navlist" class="navlist">
+        <!-- <li>
+          <a href="../../HomePage/index.html" class="active">Página inicial</a>
+        </li>
+       <li><a href="../../HomePage/index.html#about">Sobre nós</a></li>-->
+        <li><a href="../../Exibir barbearias/exibir.html">Barbearias</a></li>
+        <li><a href="../../Agendamento/Exibir agendamentos/seusAgendamentos.html">Agendamentos</a></li>
+        <li><a href="../../Gerenciamento de clientes/Minha conta/contaCliente.html">Minha Conta</a></li>
+       <!-- <li><a href="../../HomePage/index.html#review">Avaliações</a></li>-->
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a
+          href="../../Gerenciamento de clientes/Login cliente/loginCliente.html"
+          ><i class="bx bx-user"></i
+        ></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="cont">
+      <div class="gridContainer">
+        <div class="fotoAgendamento">
+          <p>Algum imprevisto? Remarque!</p>
+          <img
+            src="../../assets/imgs/agendamento.svg"
+            alt="Agendamento"
+            id="barber"
+          />
+        </div>
+        <div class="form">
+          <div>
+            <h1 class="subAgendamento">Alterar agendamento</h1>
+          </div>
+
+          <form class="formularioAgendamento" id="agendamentoForm">
+            <label for="service">Nome do serviço</label>
+            <!-- Fazer com integração para o place holder ser o nome do serviço que está sendo agendado /> -->
+            <input
+              type="text"
+              id="service"
+              placeholder="Nome do serviço em questão"
+              disabled
+            />
+
+            <label for="descricao">Descrição do agendamento</label>
+            <input type="text" id="descricao" placeholder="Descrição" />
+
+            <label for="data">Data</label>
+            <input type="date" id="data" placeholder="Data" required />
+
+            <!--<label for="horario">Horário</label>
+            <input type="time" id="horario" name="horario" />-->
+            <label for="tipo">Horários Disponíveis</label>
+            <select class="selectForm" id="tipo" name="opcoes">
+              <option value="">Selecione um horário</option>
+            </select>
+            <!-- Fazer com integração método de extração de horas(possivel fazer com a função split(":") onde será divido em um array onde o [0]: Contém as horas. [1]: Contém os minutos.) /> -->
+
+            <!-- Se disponivel no postgre agendar automaticamente /> -->
+            <button class="botaoLogin" id="btn" type="submit">
+              Checkar disponibilidade
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- Boxicons CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="icon"
+      href="../../../../docs/images/logoBarBear2.png"
+      type="image/png"
+    />
+    <title>Login - BarBear</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="../../../../docs/images/logoBarBear2.png"
+          alt="Logo BarBear"
+        />
+      </a>
+
+      <ul id="navlist" class="navlist">
+        <li>
+          <a href="../../HomePage/index.html" class="active">Página inicial</a>
+        </li>
+        <li><a href="../../HomePage/index.html#about">Sobre nós</a></li>
+       <!-- <li><a href="../../Exibir barbearias/exibir.html">Barbearias</a></li>-->
+        <li><a href="../../HomePage/index.html#review">Avaliações</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a
+          href="../../Gerenciamento de clientes/Login cliente/loginCliente.html"
+          ><i class="bx bx-user"></i
+        ></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="containerSlogan">
+        <main class="login">
+          <div>
+            <p>Faça login para usufruir dos nossos serviços</p>
+            <p>Ou venha para nossa familia</p>
+          </div>
+          <img
+            src="../../../../docs/images/undraw_barber_-3-uel.svg"
+            alt="Barber"
+            id="barber"
+          />
+        </main>
+        <div class="form">
+          <div>
+            <h1 class="subLogin">Login</h1>
+          </div>
+
+          <form class="formulario" id="loginForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Senha" required />
+
+            <label for="tipo">Cliente ou barbearia?</label>
+            <select class="selectForm" id="tipo" name="opcoes">
+              <option value="">Selecione</option>
+              <option value="Cliente">Cliente</option>
+              <option value="Barbearia">Barbearia</option>
+            </select>
+
+            <button
+              class="botaoLogin"
+              type="submit"
+              id="btn"
+              href="../Minha conta/contaCliente.html"
+            >
+              LOGAR
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS Link -->
+    <script src="../../HomePage/JS/header.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

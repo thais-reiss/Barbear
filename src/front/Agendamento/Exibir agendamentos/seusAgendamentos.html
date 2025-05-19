@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../../../../docs/images/logoBarBear2.png"
+      type="image/png"
+    />
+    <title>Meus Agendamentos - BarBear</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/header.css"
+    />
+    <link rel="stylesheet" href="./CSS/popup.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="../../../../docs/images/logoBarBear2.png"
+          alt="Logo BarBear"
+        />
+      </a>
+
+      <ul id="navlist" class="navlist">
+       <!--<li>
+          <a href="../../HomePage/index.html" class="active">Página inicial</a>
+        </li>--> 
+
+        <li><a href="../../Exibir barbearias/exibir.html">Barbearias</a></li>
+        <li><a href="../../Agendamento/Exibir agendamentos/seusAgendamentos.html">Agendamentos</a></li>
+        <li><a href="../../Gerenciamento de clientes/Minha conta/contaCliente.html">Minha Conta</a></li>
+
+        <!--<li><a href="../../HomePage/index.html#about">Sobre nós</a></li>
+        <li><a href="../../HomePage/index.html#review">Avaliações</a></li>-->
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a
+          href="../../Gerenciamento de clientes/Login cliente/loginCliente.html"
+          ><i class="bx bx-user"></i
+        ></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="cont">
+      <div class="hud">
+        <h1 id="tituloServicos">Seus agendamentos!</h1>
+        <button id="botaoCadastrar">Agendar novo serviço</button>
+      </div>
+
+      <main>
+        <div id="agendamentos">
+          <!--<div class="product-card" id="services-container">
+              <div class="logo-cart">
+                <img src="../../../../docs/images/logoBarBear2.png" alt="Logo da barbearia" />
+                <i class="bx bx-shopping-bag"></i>
+              </div>
+              <div class="main-images">
+                <button id="btnExcluir" class="delete-btn" title="Excluir serviço">X</button>
+                <img id="cabelo" class="cabelo" src="../../assets/imgs/cabelo.jpg" alt="cabelo" />
+              </div>
+
+              <div class="detalhes-corte">
+                  <span class="corte_name">Corte Exemplo</span>
+                  <p>
+                    Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                    Eum, ea, ducimus!
+                  </p>
+                  <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bx-star"></i>
+                  </div>
+                  <div class="date">
+
+                    <span class="date_num">25/06</span>
+                    <span class="hours_num">17h</span>
+                  </div>
+                  <div class="button">
+                    <button id="btnAlterar" class="butao">Alterar agendamento</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div >
+
+
+                <div class="product-card" id="services-container">
+                  <div class="logo-cart">
+                    <img src="../../../../docs/images/logoBarBear2.png" alt="Logo da barbearia" />
+                    <i class="bx bx-shopping-bag"></i>
+                  </div>
+                  <div class="main-images">
+                    <button id="btnExcluir" class="delete-btn" title="Excluir serviço">X</button>
+                    <img id="cabelo" class="cabelo" src="../../assets/imgs/cabelo.jpg" alt="cabelo" />
+                  </div>
+
+                  <div class="detalhes-corte">
+                      <span class="corte_name">Corte Exemplo</span>
+                      <p>
+                        Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                        Eum, ea, ducimus!
+                      </p>
+                      <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bx-star"></i>
+                      </div>
+                      <div class="date">
+
+                        <span class="date_num">25/06</span>
+                        <span class="hours_num">17h</span>
+                      </div>
+                      <div class="button">
+                        <button id="btnAlterar" class="butao">Alterar agendamento</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div >
+
+
+                    <div class="product-card" id="services-container">
+                      <div class="logo-cart">
+                        <img src="../../../../docs/images/logoBarBear2.png" alt="Logo da barbearia" />
+                        <i class="bx bx-shopping-bag"></i>
+                      </div>
+                      <div class="main-images">
+                        <button id="btnExcluir" class="delete-btn" title="Excluir serviço">X</button>
+                        <img id="cabelo" class="cabelo" src="../../assets/imgs/cabelo.jpg" alt="cabelo" />
+                      </div>
+
+                      <div class="detalhes-corte">
+                          <span class="corte_name">Corte Exemplo</span>
+                          <p>
+                            Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+                            Eum, ea, ducimus!
+                          </p>
+                          <div class="stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bx-star"></i>
+                          </div>
+                          <div class="date">
+
+                            <span class="date_num">25/06</span>
+                            <span class="hours_num">17h</span>
+                          </div>
+                          <div class="button">
+                            <button id="btnAlterar" class="butao">Alterar agendamento</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>-->
+        </div>
+      </main>
+    </div>
+    <script src="../../HomePage/JS/header.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

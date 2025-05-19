@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterar - BarBear</title>
+    <link
+      rel="icon"
+      href="../../../../docs/images/logoBarBear2.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/header.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="../../../../docs/images/logoBarBear2.png"
+          alt="Logo BarBear"
+        />
+      </a>
+
+      <ul id="navlist" class="navlist">
+       <!-- <li>
+          <a href="../../HomePage/index.html" class="active">Página inicial</a>
+        </li>
+        <li><a href="../../HomePage/index.html#about">Sobre nós</a></li>
+        <li><a href="../../Exibir barbearias/exibir.html">Barbearias</a></li>
+        <li><a href="../../HomePage/index.html#review">Avaliações</a></li>-->
+        <li><a href="../Meus servicos/meus-servicos.html">Serviços</a></li>
+        <li><a href="../../Gerenciamento de Barbearias/Meus agendamentos/agendamentos.html">Agendamentos</a></li>
+        <li><a href="../../Gerenciamento de Barbearias/Minha conta/minhaConta.html">Minha Conta</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a
+          href="../../Gerenciamento de clientes/Login cliente/loginCliente.html"
+          ><i class="bx bx-user"></i
+        ></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="mainContainer">
+      <main class="login">
+        <div>
+          <p>Mantenha seus serviços</p>
+          <p>Muito bem atualizados!</p>
+        </div>
+        <img
+          id="barber"
+          src="../../../../docs/images/undraw_barber_-3-uel.svg"
+          alt="Barber"
+        />
+      </main>
+      <div class="form">
+        <h1 class="subLogin">Serviço</h1>
+        <form class="formulario" action="#">
+          <label for="nomeServico">Nome do serviço</label>
+          <input type="text" id="nomeServico" placeholder="Nome do serviço" />
+
+          <label for="tipoServico">Tipo de Serviço</label>
+          <input type="text" id="tipoServico" placeholder="Tipo de serviço" />
+
+          <label for="preco">Preço</label>
+          <input type="number" id="preco" placeholder="Preço" />
+
+          <label for="descricaoServico">Descrição</label>
+          <textarea
+            name="descricaoServico"
+            id="descricaoServico"
+            rows="4"
+            cols="50"
+            placeholder="Digite sua descrição aqui..."
+          ></textarea>
+
+          <!--<label for="horario">Horário</label>
+          <select class="selectForm" id="horario" name="horario">
+            <option value="Selecione">Selecione</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+          </select>-->
+
+          <!--<p>Imagem</p>
+          <label class="picture" for="imagemServico" tabIndex="0"></label>
+          <input type="file" name="picture__input" id="imagemServico">-->
+
+          <label for="imagem">Imagem</label>
+          <input type="text" id="imagem" placeholder="Imagem" />
+
+          <button class="botaoLogin" type="button" id="nextButton">
+            ATUALIZAR
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../../HomePage/JS/header.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

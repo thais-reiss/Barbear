@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarBear - Alterar conta</title>
+    <link
+      rel="icon"
+      href="../../../../docs/images/logoBarBear2.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/header.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="../../../../docs/images/logoBarBear2.png"
+          alt="Logo BarBear"
+        />
+      </a>
+
+      <ul id="navlist" class="navlist">
+       <!-- <li>
+          <a href="../../HomePage/index.html" class="active">Página inicial</a>
+        </li>-->
+        <!--<li><a href="../../HomePage/index.html#about">Sobre nós</a></li>-->
+        <li><a href="../../Exibir barbearias/exibir.html">Barbearias</a></li>
+        <li><a href="../../Agendamento/Exibir agendamentos/seusAgendamentos.html">Agendamentos</a></li>
+        <li><a href="../Minha conta/contaCliente.html">Minha Conta</a></li>
+        <!--<li><a href="../../HomePage/index.html#review">Avaliações</a></li>-->
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a
+          href="../../Gerenciamento de clientes/Login cliente/loginCliente.html"
+          ><i class="bx bx-user"></i
+        ></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="cont">
+      <div class="mainContainer">
+        <main class="login">
+          <div>
+            <p>Deseja atualizar algum</p>
+            <p>dos seus dados?</p>
+          </div>
+          <img
+            src="../../../../docs/images/undraw_barber_-3-uel.svg"
+            alt="Barber"
+            id="barber"
+          />
+        </main>
+        <div class="form">
+          <h1 class="subLogin">Alterar conta</h1>
+          <form class="formulario" action="#">
+            <label for="EmailCliente">Email</label>
+            <input type="email" id="EmailCliente" placeholder="Email" />
+
+            <label for="SenhaCliente">Senha</label>
+            <input type="password" id="SenhaCliente" placeholder="Senha" />
+
+            <label for="NomeCliente">Seu Nome</label>
+            <input type="text" id="NomeCliente" placeholder="Seu Nome" />
+
+            <label for="TelefoneCliente">Telefone</label>
+            <input type="text" id="TelefoneCliente" placeholder="Telefone" />
+            <button class="botaoLogin" type="button" id="botaoAlterar">
+              ATUALIZAR
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../HomePage/JS/header.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

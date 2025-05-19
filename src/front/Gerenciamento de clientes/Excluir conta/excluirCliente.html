@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../Gerenciamento de Barbearias/Pagina de Login/CSS/header.css"
+    />
+    <link
+      rel="icon"
+      href="../../../../docs/images/logoBarBear2.png"
+      type="image/png"
+    />
+    <title>Excluir - BarBear</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="../../../../docs/images/logoBarBear2.png"
+          alt="Logo BarBear"
+        />
+      </a>
+
+      <ul id="navlist" class="navlist">
+       <li>
+          <a href="../../HomePage/index.html" class="active">Página inicial</a>
+        </li>
+        <!--<li><a href="../../HomePage/index.html#about">Sobre nós</a></li>-->
+        <li><a href="../../Exibir barbearias/exibir.html">Barbearias</a></li>
+        <li><a href="../../Agendamento/Exibir agendamentos/seusAgendamentos.html">Agendamentos</a></li>
+        <li><a href="../Minha conta/contaCliente.html">Minha Conta</a></li>
+        <!--<li><a href="../../HomePage/index.html#review">Avaliações</a></li>-->
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a
+          href="../../Gerenciamento de clientes/Login cliente/loginCliente.html"
+          ><i class="bx bx-user"></i
+        ></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="cont">
+      <div class="containerSlogan">
+        <main class="login">
+          <div>
+            <p>A Barbear já sente sua falta!</p>
+            <p>Tem certeza?</p>
+          </div>
+          <img
+            id="fotoExclusao"
+            src="../../assets/imgs/imgDelete.svg"
+            height="100"
+            width="100"
+            alt="Menina com coracao"
+          />
+        </main>
+        <div class="form">
+          <div>
+            <h1 class="subLogin">Apagar Conta</h1>
+          </div>
+
+          <form class="formulario" action="#">
+            <label for="confirmarSenha">Confimar senha</label>
+            <input
+              type="password"
+              id="input-excluir"
+              placeholder="Confirmar Senha"
+            />
+
+            <label for="btnExcluir">Confirmar exclusão</label>
+            <button id="btnExcluir" class="botaoLogin" type="submit">
+              Confirmar exclusão
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../HomePage/JS/header.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

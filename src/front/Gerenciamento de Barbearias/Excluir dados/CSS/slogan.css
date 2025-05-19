@@ -1,0 +1,98 @@
+.login p {
+  font-size: 1.6rem;
+  line-height: 64px;
+  color: #ff9f0d;
+  font-weight: 800;
+}
+
+.cont {
+  padding: 150px 14% 60px;
+}
+
+.containerSlogan {
+  max-width: 1200px;
+  max-height: 200px;
+  margin: 0 auto;
+  display: grid;
+  padding: 40px 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 40px 20px;
+  background-color: rgba(28, 28, 28, 0.4);
+  border-radius: 40px;
+}
+
+.login img {
+  justify-self: center;
+}
+
+.subLogin {
+  justify-self: center;
+  text-transform: uppercase;
+  color: #ff9f0d;
+  font-weight: 900;
+  font-size: 2.7rem;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  color: #5b5b5b;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.formulario input:focus {
+  border: #ff9f0d 2px solid;
+  outline: none;
+}
+.formulario input {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  border: #1d1d1d 2px solid;
+  margin-bottom: 1rem;
+  background-color: #1d1d1d;
+  transition: 0.5s;
+  color: #5b5b5b;
+}
+
+.botaoLogin {
+  margin-top: 15px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  font-family: "Fira Sans", sans-serif;
+  text-align: left;
+  font-weight: bold;
+  color: #5b5b5b;
+  transition: 0.5s;
+  outline: none;
+  border: #1d1d1d 2px solid;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.botaoLogin:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #1d1d1d;
+}
+
+@media (max-width: 1000px) {
+  .containerSlogan {
+    place-self: center;
+    grid-template-columns: 1fr;
+  }
+  #fotoExclusao {
+    display: none;
+  }
+}

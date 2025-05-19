@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+:root {
+  --main-color: #ff9f0d;
+  --text-color: #fff;
+  --other-color: #212121;
+  --second-color: #9e9e9e;
+  --bg-color: #111;
+  --big-font: 4.5rem;
+  --h2-font: 2.6rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 30px 14%;
+  transition: all 0.5s ease;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 33px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  color: var(--text-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+  margin: 0 30px;
+  transition: all 0.5s ease;
+}
+
+.navlist a:hover {
+  color: var(--main-color);
+}
+
+.navlist a.active {
+  color: var(--main-color);
+}
+
+.nav-icons {
+  display: flex;
+  padding: 8px 15px;
+  align-items: center;
+  background: var(--main-color);
+  border-radius: 3rem;
+  box-shadow: #ff9f0d 0px 1px 25px;
+}
+
+.nav-icons i {
+  color: var(--bg-color);
+  vertical-align: middle;
+  font-size: 25px;
+  margin-right: 8px;
+  margin-left: 5px;
+  transition: all 0.5s ease;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 32px;
+  color: var(--bg-color);
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.nav-icons i:hover {
+  color: var(--text-color);
+  transform: scale(1.1);
+}
+
+header.sticky {
+  background: var(--other-color);
+  padding: 12px 14%;
+}
+
+@media (max-width: 1545px) {
+  header {
+    padding: 22px 4%;
+    transition: 0.2s;
+  }
+
+  header.sticky {
+    padding: 14px 4%;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1180px) {
+  :root {
+    --big-font: 4.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+  }
+}
+
+@media (max-width: 1060px) {
+  #menu-icon {
+    display: initial;
+  }
+  .navlist {
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: var(--other-color);
+    transition: all 0.5s ease;
+  }
+
+  .navlist a {
+    margin: 1rem;
+    display: block;
+    padding: 0.5rem;
+    border-left: 2px solid var(--main-color);
+  }
+
+  .navlist.open {
+    top: 100%;
+  }
+}
